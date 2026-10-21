@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CardDialog</class>
+ <widget class="QDialog" name="CardDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Novo Cartao</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QDialog {
+  background-color: #2C3E50;
+}
+QLabel {
+  color: #ECF0F1;
+  font-size: 13px;
+  font-weight: bold;
+}
+QLineEdit {
+  background-color: #34495E;
+  border: 2px solid #4A6FA5;
+  border-radius: 5px;
+  padding: 8px;
+  color: #ECF0F1;
+  font-size: 13px;
+}
+QLineEdit:focus {
+  border-color: #5DADE2;
+}
+QTextEdit {
+  background-color: #34495E;
+  border: 2px solid #4A6FA5;
+  border-radius: 5px;
+  padding: 8px;
+  color: #ECF0F1;
+  font-size: 13px;
+}
+QTextEdit:focus {
+  border-color: #5DADE2;
+}
+QComboBox {
+  background-color: #34495E;
+  border: 2px solid #4A6FA5;
+  border-radius: 5px;
+  padding: 8px;
+  color: #ECF0F1;
+  font-size: 13px;
+  min-width: 120px;
+}
+QComboBox:focus {
+  border-color: #5DADE2;
+}
+QComboBox::drop-down {
+  border: none;
+  width: 30px;
+}
+QComboBox QAbstractItemView {
+  background-color: #34495E;
+  color: #ECF0F1;
+  selection-background-color: #5DADE2;
+}
+QPushButton {
+  background-color: #2980B9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 13px;
+  min-width: 80px;
+}
+QPushButton:hover {
+  background-color: #3498DB;
+}
+QPushButton:pressed {
+  background-color: #21618C;
+}
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>12</number>
+   </property>
+   <property name="leftMargin">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>20</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="labelTitle">
+     <property name="text">
+      <string>Titulo:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="inputTitle">
+     <property name="placeholderText">
+      <string>Digite o titulo do cartao...</string>
+     </property>
+     <property name="maxLength">
+      <number>100</number>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelDescription">
+     <property name="text">
+      <string>Descricao:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="inputDescription">
+     <property name="placeholderText">
+      <string>Digite a descricao do cartao...</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayoutCombos">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayoutType">
+       <item>
+        <widget class="QLabel" name="labelType">
+         <property name="text">
+          <string>Tipo:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboType">
+         <item>
+          <property name="text">
+           <string>Tarefa</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Bug</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Melhoria</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayoutPriority">
+       <item>
+        <widget class="QLabel" name="labelPriority">
+         <property name="text">
+          <string>Prioridade:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboPriority">
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>Baixa</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Media</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Alta</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>10</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

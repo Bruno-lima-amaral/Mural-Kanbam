@@ -1,0 +1,47 @@
+PLANO DE TESTES DE QUALIDADE
+Aplicações desktop QT + servidor Flask
+
+Objetivo e critérios de execução
+Este documento propõe cenários funcionais e de qualidade para aplicações Python com cliente
+
+desktop em QT e servidor Flask. Cada aplicação tem quatro testes reproduzíveis, com pré-
+condições, ações e resultados esperados; adaptar nomes de telas e endpoints aos contratos
+
+implementados.
+Critério obrigatório de arquitetura: cada aplicação deve demonstrar, por comportamento
+observável e não apenas por presença de classes, pelo menos um padrão criacional, um
+estrutural e um comportamental. Os padrões indicados em cada seção são sugestões
+compatíveis com o domínio e devem ser substituídos se a solução do projeto adotar outros
+equivalentes.
+Como executar e avaliar
+– Interface QT: executar ações pelos controles visíveis, conferir estados, mensagens,
+navegação, atualização da tela e ausência de travamentos.
+– Dados: testar entradas válidas, ausentes, fora de faixa, malformadas, duplicadas e limites
+de negócio; verificar persistência e ausência de gravações parciais.
+– Cliente-servidor: validar requisição/resposta Flask, códigos de erro,
+autenticação/autorização, consistência após nova consulta e comportamento em falha de
+rede.
+– Design patterns: observar que a responsabilidade do padrão está isolada e que o resultado
+permanece correto nos casos válidos e inválidos.
+– Critério de aprovação sugerido: todos os resultados esperados atendidos, nenhum dado
+indevido persistido, erros recuperáveis apresentados com clareza e nenhum defeito crítico de
+autorização ou duplicidade.
+Ambiente recomendado
+Usar banco de teste isolado, contas com papéis distintos, dados reinicializáveis e um servidor
+Flask de teste. Para cenários de integração, registrar requisições/respostas e limpar os dados ao
+final; nos casos de erro, conferir tanto a mensagem exibida no QT quanto o estado persistido no
+servidor.
+
+3. Mural de Kanban
+Design patterns a demonstrar
+– Criacional — Factory Method: criar cartões por tipo (tarefa, bug, melhoria).
+– Estrutural — Composite: tratar colunas e cartões por uma interface comum.
+– Comportamental — State: restringir ações conforme o estado do cartão.
+Cenários de teste
+T3.1 — Mover cartão entre colunas
+
+T3.2 — Validar cartão incompleto
+
+T3.3 — Sincronização e conflito de edição
+
+T3.4 — State e Composite
