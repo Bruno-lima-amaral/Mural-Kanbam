@@ -149,5 +149,5 @@ Mural-Kanbam/
 ---
 
 ## 👥 Autoria
-* **Aluno:** Bruno Lima Amaral
+* **Alunos:** Bruno Lima Amaral RA:2403403  & Pedro Henrique Rodrigues RA: 2403467
 * **Curso:** Ciência da Computação / Paradigmas de Programação (CC5AN)
