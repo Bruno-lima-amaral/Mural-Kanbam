@@ -4,6 +4,9 @@ Projeto desenvolvido para a disciplina de **Paradigmas de Programação** (CC5AN
 
 O sistema implementa um **Mural Kanban** distribuído em arquitetura **Cliente-Servidor**, utilizando uma interface gráfica desktop em **PyQt5** integrada a uma API REST em **Flask**, com conformidade rigorosa aos padrões de projeto (*GoF Design Patterns*) e regras de domínio sem persistência em banco de dados externo.
 
+> 📄 **Documentação Oficial da AP2 (Microsoft Word):**
+> A documentação técnica e formal completa do projeto exigida na AP2 está disponível no arquivo **[DOCUMENTACAO.docx](DOCUMENTACAO.docx)**. O documento contém capa institucional, diagramas de arquitetura e classes UML em alta resolução embutidos, especificação completa de requisitos funcionais e não-funcionais, regras de negócio, critérios de aceitação e matriz de rastreabilidade dos testes de qualidade.
+
 ---
 
 ## 🎯 Padrões de Projeto Implementados
@@ -122,12 +125,14 @@ Mural-Kanbam/
 │   └── state.py            # Padrão State (Estados e Transições)
 ├── Orientacoes_AP2.txt     # Requisitos da atividade
 ├── PLANO_DE_TESTES_DE_QUALIDADE_AP2.txt  # Critérios de teste do projeto
+├── docs_img/               # Imagens de diagramas em alta resolução
 ├── requirements.txt        # Dependências do projeto
 ├── run_client.py           # Ponto de entrada do cliente desktop
 ├── run_server.py           # Ponto de entrada do servidor Flask
 ├── test_kanban.py          # Bateria de testes automatizados (unittest)
 ├── .gitignore              # Arquivos ignorados pelo Git
-└── README.md               # Documentação completa
+├── DOCUMENTACAO.docx       # Documentação técnica formal em Word (.docx) com capa e diagramas
+└── README.md               # Apresentação e guia rápido do projeto
 ```
 
 ---
