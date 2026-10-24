@@ -123,8 +123,6 @@ Mural-Kanbam/
 │   ├── composite.py        # Padrão Composite (Board, Column, Card)
 │   ├── factory.py          # Padrão Factory Method (Tipos de Cartão)
 │   └── state.py            # Padrão State (Estados e Transições)
-├── Orientacoes_AP2.txt     # Requisitos da atividade
-├── PLANO_DE_TESTES_DE_QUALIDADE_AP2.txt  # Critérios de teste do projeto
 ├── docs_img/               # Imagens de diagramas em alta resolução
 ├── requirements.txt        # Dependências do projeto
 ├── run_client.py           # Ponto de entrada do cliente desktop
